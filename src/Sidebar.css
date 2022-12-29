@@ -1,14 +1,18 @@
 .sidebar{
     top: 80px;
     position: sticky;
-    flex: 0.2;
+    flex: 0.19;
     border-radius: 10px;
     text-align: center;
     height: fit-content;
+    padding-left: 15pc;
 
 }
 .sidebar_avatar{
     margin-bottom: 10px;
+    min-width: max-content;
+    min-height: max-content;
+
 
 }
 .sidebar_top{

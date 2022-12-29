@@ -10,6 +10,7 @@ import Post from './Post';
 import { db } from "./firebase";
 import firebase from 'firebase/compat/app';
 import FlipMove from 'react-flip-move';
+import { Avatar } from '@mui/material';
 
 
 
@@ -43,6 +44,7 @@ function Feed() {
         <div className='feed'>
             <div className='feed_inputcontainer'>
                 <div className='feed_input'>
+                    
                     <CreateIcon />
                     <form>
                         <input value={input} onChange={e => setInput(e.target.value)} type="text" />

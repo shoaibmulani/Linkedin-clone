@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
-    height: 22px;
+    height: 18px;
     color: gray;
     background-color:  #eef3f8;
  }
@@ -42,3 +42,18 @@
 
 
  }
+ .vertical_line{
+   border-left: 1px solid lightgray;
+
+
+   
+ }
+.header_right1{
+   display: flex; 
+   padding-left: 20px;
+}
+.header_rightmain{
+   display: flex;
+   justify-content: space-evenly;
+}
+
