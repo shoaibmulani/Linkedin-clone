@@ -2,13 +2,13 @@ import React from 'react'
 import './Widgets';
 import InfoIcon from '@mui/icons-material/Info';
 import './Widgets.css'
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 
 function Widgets() {
     const newsArticle = (heading, subtitle) =>(
         <div className='widgets_article'>
             <div className='widgets_articleLeft'>
-                <FiberManualRecordIcon/>
+                <RadioButtonUncheckedIcon/>
             </div>
 
             <div className='widgets_articleRight'>

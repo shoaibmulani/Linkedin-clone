@@ -30,8 +30,11 @@
 
 }
 .widgets_articleLeft{
-    color: #0177b7;
+    color: black;
     margin-right: 5px;
+    border-radius: 1rem;
+    
+    
 
 
 }

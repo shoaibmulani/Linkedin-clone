@@ -1,9 +1,10 @@
 .app_body{
     display: flex;
+    
 
 }
 .app{
-    background-color: #f3f2ef;
+    background-color:whitesmoke;
     display: flex;
     flex-direction: column;
     

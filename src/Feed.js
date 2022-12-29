@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import InputOptions from './InputOptions';
-import CreateIcon from '@mui/icons-material/Create';
-import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
-import EventNoteIcon from '@mui/icons-material/EventNote';
+import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
+import InsertInvitationIcon from '@mui/icons-material/InsertInvitation';
 import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
 import ImageIcon from '@mui/icons-material/Image';
 import "./Feed.css";
@@ -11,6 +10,7 @@ import { db } from "./firebase";
 import firebase from 'firebase/compat/app';
 import FlipMove from 'react-flip-move';
 import { Avatar } from '@mui/material';
+import profile from "./profile image.jpg"
 
 
 
@@ -43,19 +43,22 @@ function Feed() {
     return (
         <div className='feed'>
             <div className='feed_inputcontainer'>
-                <div className='feed_input'>
+                <div className='feed_container'>
+                    <Avatar src={profile}/>
+                    <div className='feed_input'>
                     
-                    <CreateIcon />
                     <form>
                         <input value={input} onChange={e => setInput(e.target.value)} type="text" />
                         <button onClick={sendPost} type='submit'>Send</button>
                     </form>
                 </div>
+                </div>
+                
                 <div className='feed_inputoptions'>
                     <InputOptions Icon={ImageIcon} title='Photo' color='#70B5F9' />
-                    <InputOptions Icon={SubscriptionsIcon} title='Video' color='#E7A33E' />
-                    <InputOptions Icon={EventNoteIcon} title='Event' color='#C0CBCD' />
-                    <InputOptions Icon={CalendarViewDayIcon} title='Write article' color='#7FC15E' />
+                    <InputOptions Icon={SmartDisplayIcon} title='Video' color='#4caf50' />
+                    <InputOptions Icon={InsertInvitationIcon} title='Event' color='#a13800' />
+                    <InputOptions Icon={CalendarViewDayIcon} title='Write article' color='#e53935' />
 
                 </div>
             </div>
