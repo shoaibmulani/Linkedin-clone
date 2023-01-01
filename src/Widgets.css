@@ -32,11 +32,8 @@
 .widgets_articleLeft{
     color: black;
     margin-right: 5px;
-    border-radius: 1rem;
-    
-    
-
-
+    border-radius: 1 rem;
+    font-size:small;
 }
 .widgets_articleLeft> .MuiSvgIcon-root{
     font-size: 15px;
