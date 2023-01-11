@@ -1,11 +1,12 @@
 .sidebar{
     top: 80px;
-    position: sticky;
+    position:sticky;
     flex: 0.19;
     border-radius: 10px;
     text-align: center;
     height: fit-content;
     padding-left: 15pc;
+    scroll-behavior: auto;
 
 }
 .sidebar_avatar{
@@ -76,9 +77,7 @@
     position:sticky;
     text-align: left;
     padding: 10px;
-    border: 1px solid lightgrey;
     background-color: white;
-    border-radius: 10px;
     margin-top: 10px;
     
 
@@ -116,4 +115,27 @@
 }
 .sidebartop_main{
     position: static;
+}
+.group_icon{
+   margin-right: 5px; 
+}
+.sidebar_buttom_1{
+    position:sticky;
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+    
+
+}
+.sidebar_buttom_1>p{
+    color: #0a66c2;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.sidebar_b{
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    position: sticky;
 }

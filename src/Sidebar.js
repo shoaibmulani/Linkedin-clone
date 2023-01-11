@@ -3,10 +3,12 @@ import "./Sidebar.css";
 import profile from "./profile image.jpg"
 import background from "./backgroung_img.jpeg"
 import { Avatar } from '@mui/material';
+import Groups2Icon from '@mui/icons-material/Groups2';
 function Sidebar() {
     const recentitem=(Topic)=> (
         <div className='sidebar_recentitem'>
             <span className='sidebar_hash'></span>
+            <Groups2Icon className='group_icon'/>
             <p>{Topic}</p>
 
         </div>
@@ -31,14 +33,23 @@ function Sidebar() {
                 </div>
             </div>
         </div>
-        <div className='sidebar_buttom'>
-            <p>Recent</p>
-            {recentitem('#reactjs')}
-            {recentitem('#programming')}
-            {recentitem('#softwareengineering')}
-            {recentitem('#design')}
-            {recentitem('#devevloper')}
-        </div>
+        <div className='sidebar_b'> 
+            <div className='sidebar_buttom'>
+                <p>Recent</p>
+                {recentitem(' front end developers')}
+                {recentitem(' Developers community')}
+                {recentitem(' HR Circle')}
+                {recentitem(' Full Stack developers')}
+                {recentitem(' devevlopers')}
+            </div>
+            <div className='sidebar_buttom_1'>
+                <p>Groups</p>
+                {recentitem(' Developers community')}
+                {recentitem(' HR Circle')}
+                {recentitem(' devevlopers')}
+
+            </div>
+        </div>  
     </div>
   )
 }
