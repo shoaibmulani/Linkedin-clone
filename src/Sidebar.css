@@ -6,9 +6,9 @@
     text-align: center;
     height: fit-content;
     padding-left: 15pc;
-    scroll-behavior: auto;
-
+    scroll-behavior:smooth;
 }
+
 .sidebar_avatar{
     margin-bottom: 10px;
     min-width: max-content;

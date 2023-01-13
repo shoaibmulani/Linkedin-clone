@@ -10,6 +10,9 @@
     
 
 }
+@media(max-width:1080px){
+    
+}
 .widgets_header{
     display: flex;
     align-items: center;
